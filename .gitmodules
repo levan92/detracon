@@ -1,0 +1,6 @@
+[submodule "det2"]
+	path = det2
+	url = https://github.com/levan92/det2.git
+[submodule "deep_sort_realtime"]
+	path = deep_sort_realtime
+	url = https://github.com/levan92/deep_sort_realtime.git
