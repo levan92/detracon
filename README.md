@@ -2,6 +2,7 @@
 
 ## Installation
 
+- git clone and git submodule update --init --recursive
 - Build docker image `docker build -t detracon .` or pull docker image `docker pull levan92/detracon`
 - Run docker image with mapped volume for code dev as`start_docker.sh`
 
