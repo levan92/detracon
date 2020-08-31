@@ -83,9 +83,11 @@ od = Det2(
     )
 print("----------OD started----------")
 
+nn_budget = int (vid_info['fps'] * 10) # 10 secs in the past
+
 # assuming 7fps & 70nn_budget, tracker looks into 10secs in the past.
 tracker = Tracker(
-    max_age=30, nn_budget=70, override_track_class=None, clock=clock
+    max_age=30, nn_budget=nn_budget, override_track_class=None, clock=clock
 )
 print("----------Tracker started----------")
 
