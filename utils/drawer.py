@@ -68,7 +68,7 @@ class Drawer(object):
 
         l,t,r,b = [int(x) for x in track.to_tlbr()]
         
-        text = 'Trk {}, Class {}'.format(track.track_id.split('_')[1], track.class_name)
+        text = 'Trk {}, Class {}'.format(track.track_id.split('_')[1], track.det_class)
 
         main_text_size, text_baseline = cv2.getTextSize(text, self.font, fontScale, fontThickness)
         main_text_w, main_text_h = main_text_size
